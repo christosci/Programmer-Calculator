@@ -1,0 +1,160 @@
+/* ==========================================================================
+   Root styles
+   ========================================================================== */
+.root {
+    -fx-font-family: "Segoe UI"; /* Windows 10 app font */
+    -fx-font-size: 12;
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+}
+
+.root, .tab-header-background, .text-field {
+    -fx-background-color: rgb(230, 230, 230);
+}
+
+
+/* ==========================================================================
+   Global styles
+   ========================================================================== */
+
+.button, .toggle-button {
+    -fx-min-width: 50;
+    -fx-min-height: 40;
+    -fx-border-width: 0;
+    -fx-background-radius: 0;
+    -fx-background-color: rgb(240, 240, 240);
+}
+
+.button:hover, .toggle-button:hover, #number-button:hover, #toggle-button:hover {
+    -fx-background-color: rgb(209, 209, 209);
+}
+
+
+/* ==========================================================================
+   Menu button and programmer label
+   ========================================================================== */
+
+#menu-button {
+    -fx-background-color: transparent;
+}
+
+#menu-button:hover {
+    -fx-background-color: rgb(209, 209, 209);
+}
+
+#programmer-label {
+    -fx-font-size: 20;
+}
+
+
+/* ==========================================================================
+   Input and expression history displays
+   ========================================================================== */
+
+#input-history-label {
+    -fx-font-size: 14;
+}
+
+.text-field {
+    -fx-text-box-border: transparent;
+    -fx-font-weight: bold;
+    -fx-pref-width: 50;
+    -fx-font-size: 24;
+    -fx-highlight-fill: null;
+    -fx-highlight-text-fill: null;
+    -fx-display-caret: false;
+}
+
+
+/* ==========================================================================
+   Number system radio buttons and labels
+   ========================================================================== */
+
+#number-system-radio-button {
+    -fx-font-weight: bold;
+    -fx-padding: 0 0 0 10;
+    -fx-border-width: 0 0 0 5;
+    -fx-border-color: transparent;
+}
+
+#number-system-radio-button:selected {
+    -fx-border-color: rgb(36, 137, 219);
+}
+
+
+/* ==========================================================================
+   Tab pane
+   ========================================================================== */
+
+.tab-pane {
+    -fx-tab-min-width: 40;
+}
+
+.tab {
+    -fx-border-color: transparent;
+    -fx-border-width: 0 0 5 0;
+    -fx-background-radius: 0;
+    -fx-background-color: transparent;
+    -fx-content-display: graphic-only;
+}
+
+.tab:hover, .tab:selected {
+    -fx-border-color: rgb(36, 137, 219);
+}
+
+.tab:disabled {
+    -fx-opacity: 1.0;
+}
+
+#memory-button, #word-button {
+    -fx-min-height: 30;
+    -fx-background-color: transparent;
+    -fx-font-weight: bold;
+}
+
+
+#memory-button:hover, #word-button:hover {
+    -fx-background-color: rgb(209, 209, 209);
+}
+
+#word-button {
+    -fx-pref-width: 70; /* fixed width */
+}
+
+
+/* ==========================================================================
+   Keypad
+   ========================================================================== */
+
+#letter-button {
+    -fx-font-size: 11;
+    -fx-background-color: rgb(250, 250, 250);
+}
+
+#number-button {
+    -fx-font-size: 14;
+    -fx-font-weight: bold;
+    -fx-background-color: rgb(250, 250, 250);
+}
+
+#operation-button, #equals-button, #parenthesis-button {
+    -fx-font-size: 20;
+}
+
+#shift-button {
+    -fx-font-size: 18;
+    -fx-font-weight: bold;
+}
+
+#clear-button {
+    -fx-font-weight: bold;
+}
+
+/* toggle button is the up-arrow (shift) button */
+.toggle-button {
+    -fx-border-width: 0 0 5 0;
+}
+
+.toggle-button:selected {
+    -fx-border-color: rgb(36, 137, 219);
+}
